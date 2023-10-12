@@ -28,6 +28,7 @@ function CatniCard(){
 }
 
 const AwardContent = styled.div`
+  width: fit-content;
   cursor: pointer;
   display: flex;
   flex-direction: column;

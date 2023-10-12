@@ -26,6 +26,7 @@ function DorothyCard(){
 }
 
 const AwardContent = styled.div`
+  width: fit-content;
   cursor: pointer;
   display: flex;
   flex-direction: column;
@@ -63,7 +64,7 @@ const AwardContent = styled.div`
     }
 
     .second {
-      background-color: #C0C0C0;
+      background-color: #e7e7e7;
     }
   }
 `

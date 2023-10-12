@@ -5,7 +5,7 @@ import AlphaAceCard from "../common/AlphaAceCard";
 import DorothyCard from "../common/DorothyCard";
 import cert from "../assets/unityuser.jfif";
 import me from "../assets/me.jpg";
-import linkedin from "../assets/linkedin-icon.png";
+import linkedin from "../assets/linkedin-color.png";
 
 function RootPage(){
 
@@ -23,12 +23,19 @@ function RootPage(){
         <img src={me} className="profile--pic"/>
         <div className="profile--name">Pherawat Wongsawad</div>
       </div>
-      <div className="award-title">Awards</div>
-      <div className="award">
-        <CatniCard/>
-        <ImmuniceCard/>
-        <AlphaAceCard/>
-        <DorothyCard/>
+      <div className="a-box">
+        <div className="award-title">Awards</div>
+        <div className="award">
+          <CatniCard/>
+          <ImmuniceCard/>
+          <AlphaAceCard/>
+          <DorothyCard/>
+        </div>
+      </div>
+      <div className="work">
+        <div className="work--title">
+          Experiences
+        </div>
       </div>
       <div className="cert">
         <div className="cert--title">Unity Certified User: Programmer</div>
@@ -55,7 +62,7 @@ const PageLayout = styled.div`
   .profile {
     display: flex;
     flex-direction: column;
-    background-color: #1620a6;
+    background-color: #D9EDF8;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -64,8 +71,8 @@ const PageLayout = styled.div`
 
     &--name {
       font-size: 6em;
-      font-weight: 700;
-      color: white;
+      font-weight: 800;
+      color: black;
     }
 
     &--pic {
@@ -76,9 +83,18 @@ const PageLayout = styled.div`
     }
   }
 
+  .a-box {
+    width: 100%;
+    background-color: #ffadad;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
   .award-title {
     font-size: 3em;
-    font-weight: 600;
+    font-weight: 700;
     text-align: center;
     margin-top: 1em;
   }
@@ -88,11 +104,12 @@ const PageLayout = styled.div`
     grid-template-columns: auto auto auto;
     grid-gap: 2em 1em;
     padding-bottom: 2em;
+
   }
   .contact {
     display:  flex;
     flex-direction: column;
-    background-color: #1620a6;
+    background-color: #D9EDF8;
     width: 100%;
     padding: 1em 0;
     align-items: center;
@@ -102,7 +119,6 @@ const PageLayout = styled.div`
       text-align: center;
       font-size: 3em;
       font-weight: 600;
-      color: white;
     }
 
     &--url {
@@ -120,13 +136,20 @@ const PageLayout = styled.div`
     }
 
     &--email {
-      color: white;
       font-size: 1.25em;
     }
   }
+
+  .work {
+    &--title {
+      font-weight: 700;
+      font-size: 3em;
+    }
+  }
+
   .cert {
     width: 100%;
-    background-color: #ff7b7c;
+    background-color: #dedaf4;
     display: flex;
     flex-direction: column;
     justify-content: center;
