@@ -17,10 +17,14 @@ function RootPage(){
     window.location.href = "https://verify.certiport.com/";
   }
 
+  function gotoLikeME(){
+    window.location.href = "https://youtu.be/ePd7x8mdO-0";
+  }
+
   return (
     <PageLayout>
       <div className="profile">
-        <img src={me} className="profile--pic"/>
+        <img src={me} className="profile--pic" onClick={gotoLinkedin}/>
         <div className="profile--name">Pherawat Wongsawad</div>
       </div>
       <div className="a-box">
@@ -35,6 +39,13 @@ function RootPage(){
       <div className="work">
         <div className="work--title">
           Experiences
+        </div>
+        <div onClick={gotoLikeME} className="likeme">
+          <div className="work--role">Unity VR Developer Internship</div>
+          <div className="work--date">28 March to 27 May 2022</div>
+          <iframe width="960" height="540"
+            src="https://www.youtube.com/embed/ePd7x8mdO-0?si=l1cyI3k4ZPykmjNp">
+          </iframe>
         </div>
       </div>
       <div className="cert">
@@ -80,6 +91,11 @@ const PageLayout = styled.div`
       height: 200px;
       object-fit: cover;
       border-radius: 50%;
+      cursor: pointer;
+    }
+
+    &--pic:hover {
+      box-shadow: 1px 1px 2px blue, 0 0 25px blue, 0 0 5px blue;
     }
   }
 
@@ -141,9 +157,31 @@ const PageLayout = styled.div`
   }
 
   .work {
+    padding: 0.75em 0;
+    width: 100%;
+    background-color: #c9e4de;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     &--title {
       font-weight: 700;
       font-size: 3em;
+    }
+
+    .likeme {
+      margin: 0.25em 0;
+      display: flex;
+      flex-direction: column;
+    }
+
+    &--role {
+      font-size: 1.5em;
+      font-weight: 600;
+    }
+
+    &--date {
+      
     }
   }
 

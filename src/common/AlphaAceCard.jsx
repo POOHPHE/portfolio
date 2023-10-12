@@ -25,6 +25,7 @@ function AlphaAceCard(){
 
 const AwardContent = styled.div`
   width: fit-content;
+  height: 100%;
   cursor: pointer;
   display: flex;
   flex-direction: column;
