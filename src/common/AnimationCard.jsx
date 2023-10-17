@@ -1,21 +1,21 @@
 import styled from "styled-components";
-import imgs from "../assets/alpha.png"
-function AlphaAceCard(){
+import imgs from "../assets/animmoo.jpg"
+function AnimationCard(){
 
   function OnClick(){
     window.location.href = "https://poohphe.itch.io/alpha-ace-nsc-2021";
   }
 
   return (
-    <AwardContent onClick={OnClick} href="https://poohphe.itch.io/alpha-ace-nsc-2021">
+    <AwardContent onClick={OnClick} href="https://www.wealthmagik.com/animationaward/season3">
       <div className="bg">
         <img src={imgs} className="pic"/>
         <div className="title">
-          Alpha Ace
+          Animation เรื่องหมูหมู 
         </div>
         <div className="tag">
           <div className="tag--sub second">
-            Finalists of NSC 2021
+            Popular Vote Award
           </div>
         </div>
       </div>
@@ -68,4 +68,4 @@ const AwardContent = styled.a`
   }
 `
 
-export default AlphaAceCard;
+export default AnimationCard;

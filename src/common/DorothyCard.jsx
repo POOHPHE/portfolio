@@ -8,7 +8,7 @@ function DorothyCard(){
   }
 
   return (
-    <AwardContent onClick={OnClick}>
+    <AwardContent onClick={OnClick} href="https://poohphe.itch.io/dorothy-nsc-2019">
       <div className="bg">
 
         <img src={imgs}  className="pic"/>
@@ -25,13 +25,14 @@ function DorothyCard(){
   );
 }
 
-const AwardContent = styled.div`
+const AwardContent = styled.a`
   width: fit-content;
   cursor: pointer;
   display: flex;
   flex-direction: column;
   gap: 0.25em;
-
+  color: black;
+  text-decoration: none;
   .bg {
     padding: 0.25em;
   }

@@ -6,6 +6,7 @@ import DorothyCard from "../common/DorothyCard";
 import cert from "../assets/unityuser.jfif";
 import me from "../assets/me.jpg";
 import linkedin from "../assets/linkedin-color.png";
+import AnimationCard from "../common/AnimationCard";
 
 function RootPage(){
 
@@ -24,7 +25,7 @@ function RootPage(){
   return (
     <PageLayout>
       <div className="profile">
-        <img src={me} className="profile--pic" onClick={gotoLinkedin}/>
+        <a href="https://www.linkedin.com/in/pherawatwong/"><img src={me} className="profile--pic" onClick={gotoLinkedin}/></a>
         <div className="profile--name">Pherawat Wongsawad</div>
       </div>
       <div className="a-box">
@@ -34,6 +35,7 @@ function RootPage(){
           <ImmuniceCard/>
           <AlphaAceCard/>
           <DorothyCard/>
+          <AnimationCard/>
         </div>
       </div>
       <div className="work">
@@ -51,13 +53,13 @@ function RootPage(){
       <div className="cert">
         <div className="cert--title">Unity Certified User: Programmer</div>
         <img src={cert} className="cert--pic"/>
-        <div className="cert--id" onClick={gotoCertiport}>Credential ID: 4xqU-XMS8</div>
+        <div className="cert--id" onClick={gotoCertiport}><a href="https://verify.certiport.com/">Credential ID: 4xqU-XMS8</a></div>
       </div>
       <div className="contact">
         <div className="contact--title">Contact</div>
         <div className="contact--url">
           <div className="contact--email">Email: pooh_phe_wong@outlook.com</div>
-          <img src={linkedin} className="contact--icon" onClick={gotoLinkedin}/>
+          <a href="https://www.linkedin.com/in/pherawatwong/"><img src={linkedin} className="contact--icon" onClick={gotoLinkedin}/></a>
         </div>
       </div>
     </PageLayout>
@@ -204,7 +206,10 @@ const PageLayout = styled.div`
       width: 750px;
     }
     &--id {
-      cursor: pointer;
+      a {
+        color: black;
+        text-decoration: none;
+      }
     }
   }
 `;

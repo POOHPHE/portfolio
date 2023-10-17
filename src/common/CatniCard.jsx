@@ -8,7 +8,7 @@ function CatniCard(){
   }
 
   return (
-    <AwardContent onClick={OnClick}>
+    <AwardContent onClick={OnClick} href="https://poohphe.itch.io/catni">
       <div className="bg">
         <img src={imgs}  className="pic"/>
         <div className="title">
@@ -27,12 +27,14 @@ function CatniCard(){
   );
 }
 
-const AwardContent = styled.div`
+const AwardContent = styled.a`
   width: fit-content;
   cursor: pointer;
   display: flex;
   flex-direction: column;
   gap: 0.25em;
+  color: black;
+  text-decoration: none;
   .bg {
     padding: 0.25em;
   }
