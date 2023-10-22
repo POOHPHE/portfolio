@@ -48,6 +48,7 @@ const AwardContent = styled.a`
   .pic {
     width: 375px;
     height: 375px;
+    border-radius: 10px;
     object-fit: cover;
   }
 

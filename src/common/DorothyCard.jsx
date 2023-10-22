@@ -51,6 +51,7 @@ const AwardContent = styled.a`
     width: 375px;
     height: 375px;
     object-fit: cover;
+    border-radius: 10px;
   }
 
   .tag {
