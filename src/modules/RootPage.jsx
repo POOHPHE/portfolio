@@ -75,7 +75,7 @@ const PageLayout = styled.div`
   .profile {
     display: flex;
     flex-direction: column;
-    background-color: #D9EDF8;
+    background-color: #ffffff;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -103,7 +103,7 @@ const PageLayout = styled.div`
 
   .a-box {
     width: 100%;
-    background-color: #ffadad;
+    background-color: #dfdfdf;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -127,7 +127,7 @@ const PageLayout = styled.div`
   .contact {
     display:  flex;
     flex-direction: column;
-    background-color: #D9EDF8;
+    background-color: #ffffff;
     width: 100%;
     padding: 1em 0;
     align-items: center;
@@ -161,7 +161,7 @@ const PageLayout = styled.div`
   .work {
     padding: 0.75em 0;
     width: 100%;
-    background-color: #c9e4de;
+    background-color: #ffffff;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -189,7 +189,7 @@ const PageLayout = styled.div`
 
   .cert {
     width: 100%;
-    background-color: #dedaf4;
+    background-color: #dfdfdf;
     display: flex;
     flex-direction: column;
     justify-content: center;
